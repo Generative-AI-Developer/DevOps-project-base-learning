@@ -110,7 +110,16 @@
       "title": "Kubernetes",
       "line": "devops",
       "levels": {
-        "beginner":     { "status": "locked", "plannedProjects": 8, "projects": {} },
+        "beginner":     { "status": "locked", "plannedProjects": 8, "projects": {
+          "project-01": { "title": "Meet Your Cluster with kubectl", "status": "locked", "order": 1, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+          "project-02": { "title": "Run and Inspect a Pod", "status": "locked", "order": 2, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+          "project-03": { "title": "Run Many Copies with a Deployment", "status": "locked", "order": 3, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+          "project-04": { "title": "Give Your App a Stable Address with a Service", "status": "locked", "order": 4, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+          "project-05": { "title": "Configure an App with a ConfigMap", "status": "locked", "order": 5, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+          "project-06": { "title": "Handle Passwords with Secrets", "status": "locked", "order": 6, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+          "project-07": { "title": "Organize with Namespaces and Labels", "status": "locked", "order": 7, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+          "project-08": { "title": "Deploy a Full App (K8s Beginner Boss)", "status": "locked", "order": 8, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} }
+        } },
         "intermediate": { "status": "locked", "plannedProjects": 8, "projects": {} },
         "advanced":     { "status": "locked", "plannedProjects": 10, "projects": {} },
         "certification": {
