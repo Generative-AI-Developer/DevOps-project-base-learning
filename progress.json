@@ -184,7 +184,11 @@
             "evidence": [],
             "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" },
             "domainScores": {}
-          }
+          },
+          "project-02": { "title": "Choose the Right Claude Model", "status": "locked", "order": 2, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+          "project-03": { "title": "Give Claude a Role with a System Prompt", "status": "locked", "order": 3, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+          "project-04": { "title": "Make Your First Claude API Call", "status": "locked", "order": 4, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+          "project-05": { "title": "Build a Tiny Claude Tool (Anthropic Beginner Boss)", "status": "locked", "order": 5, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} }
         } },
         "intermediate": { "status": "locked", "plannedProjects": 6, "projects": {} },
         "advanced":     { "status": "locked", "plannedProjects": 6, "projects": {} },
