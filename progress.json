@@ -198,7 +198,14 @@
           "project-05": { "title": "Cut Cost with Prompt Caching", "status": "locked", "order": 5, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
           "project-06": { "title": "Measure Quality with an Eval (Anthropic Intermediate Boss)", "status": "locked", "order": 6, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} }
         } },
-        "advanced":     { "status": "locked", "plannedProjects": 6, "projects": {} },
+        "advanced":     { "status": "locked", "plannedProjects": 6, "projects": {
+          "project-01": { "title": "Build a Multi-Step Agent", "status": "locked", "order": 1, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+          "project-02": { "title": "Connect Claude to Tools with MCP", "status": "locked", "order": 2, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+          "project-03": { "title": "Build a Grounded Q&A with RAG", "status": "locked", "order": 3, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+          "project-04": { "title": "Add Guardrails and Beat Prompt Injection", "status": "locked", "order": 4, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+          "project-05": { "title": "Tune Cost and Speed (with Proof)", "status": "locked", "order": 5, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+          "project-06": { "title": "Build an End-to-End Agent (Anthropic Advanced Boss)", "status": "locked", "order": 6, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} }
+        } },
         "certification": {
           "status": "locked",
           "exams": {
