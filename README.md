@@ -35,11 +35,19 @@ Icons you will see:
 Open this folder in Claude Code and say: **"I want to start."**
 Claude reads `progress.json` and gives you your current project.
 
-### To see your progress (a web page, works offline)
+### Read the lessons in your browser (the Course Reader)
+```bash
+node scripts/build-reader.mjs      # makes course.html
+```
+Then open **`course.html`** in any browser. Click any project on the left to read its **study lesson** and **project tasks** — with your locked/unlocked/done status. Works offline.
+
+### To see your progress (a simple scoreboard, works offline)
 ```bash
 node scripts/build-dashboard.mjs   # makes dashboard.html
 ```
-Then open `dashboard.html` in any browser. No internet needed.
+Then open `dashboard.html` in any browser. This is just a progress map. No internet needed.
+
+> **Tip:** `course.html` is the main page to read and study. `dashboard.html` is just your score. After you complete a project, re-run both scripts to refresh them.
 
 ---
 

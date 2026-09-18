@@ -106,13 +106,19 @@ Follow `MENTOR.md` (the AI-neutral version). Short form:
 ## Common commands
 
 ```bash
-# See progress as a web page (offline, no internet, no Claude needed)
+# Build the clickable Course Reader (read lessons + projects in a browser, offline)
+node scripts/build-reader.mjs         # writes course.html  <-- main page to study from
+# then open course.html in a browser
+
+# See progress as a scoreboard (offline, no internet, no Claude needed)
 node scripts/build-dashboard.mjs      # writes dashboard.html
 # then open dashboard.html in a browser
 
 # Check the course files are consistent (curriculum <-> progress.json)
 node scripts/validate.mjs
 ```
+
+After any change to `progress.json` (e.g. marking a project complete), re-run `build-reader.mjs` and `build-dashboard.mjs` so the browser pages show the new status.
 
 There is **no build step and no server**. The platform is just files. Node is only used for the dashboard and the checker. Both run offline.
 
