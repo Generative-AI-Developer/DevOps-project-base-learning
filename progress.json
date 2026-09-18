@@ -209,14 +209,43 @@
         "certification": {
           "status": "locked",
           "exams": {
-            "ccao-f": { "status": "locked", "plannedProjects": 4, "projects": {} },
-            "ccdv-f": { "status": "locked", "plannedProjects": 5, "projects": {} },
-            "ccar-f": { "status": "locked", "plannedProjects": 5, "projects": {} },
-            "ccar-p": { "status": "locked", "plannedProjects": 5, "projects": {} }
+            "ccao-f": { "status": "locked", "plannedProjects": 4, "projects": {
+              "project-01": { "title": "CCAO-F Drill: GenAI and Claude Fundamentals", "status": "locked", "order": 1, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+              "project-02": { "title": "CCAO-F Drill: Everyday Claude Use and Prompting", "status": "locked", "order": 2, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+              "project-03": { "title": "CCAO-F Drill: Responsible and Safe Use", "status": "locked", "order": 3, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+              "project-04": { "title": "CCAO-F: Take the Mock Exam", "status": "locked", "order": 4, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} }
+            } },
+            "ccdv-f": { "status": "locked", "plannedProjects": 5, "projects": {
+              "project-01": { "title": "CCDV-F Drill: API Integration", "status": "locked", "order": 1, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+              "project-02": { "title": "CCDV-F Drill: Prompting and Structured Output", "status": "locked", "order": 2, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+              "project-03": { "title": "CCDV-F Drill: Tool Use and Agents", "status": "locked", "order": 3, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+              "project-04": { "title": "CCDV-F Drill: Evals and Cost", "status": "locked", "order": 4, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+              "project-05": { "title": "CCDV-F: Take the Mock Exam", "status": "locked", "order": 5, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} }
+            } },
+            "ccar-f": { "status": "locked", "plannedProjects": 5, "projects": {
+              "project-01": { "title": "CCAR-F Drill: Choose the Right Architecture", "status": "locked", "order": 1, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+              "project-02": { "title": "CCAR-F Drill: Data Privacy by Design", "status": "locked", "order": 2, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+              "project-03": { "title": "CCAR-F Drill: Security Frameworks and Guardrails", "status": "locked", "order": 3, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+              "project-04": { "title": "CCAR-F Drill: Multi-Model Deployment", "status": "locked", "order": 4, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+              "project-05": { "title": "CCAR-F: Take the Mock Exam", "status": "locked", "order": 5, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} }
+            } },
+            "ccar-p": { "status": "locked", "plannedProjects": 5, "projects": {
+              "project-01": { "title": "CCAR-P Drill: Enterprise Architecture at Scale", "status": "locked", "order": 1, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+              "project-02": { "title": "CCAR-P Drill: Reliability and Observability", "status": "locked", "order": 2, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+              "project-03": { "title": "CCAR-P Drill: Cost Governance at Scale", "status": "locked", "order": 3, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+              "project-04": { "title": "CCAR-P Drill: Advanced Deployment and Customization", "status": "locked", "order": 4, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+              "project-05": { "title": "CCAR-P: Take the Mock Exam (Top Anthropic Cert)", "status": "locked", "order": 5, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} }
+            } }
           }
         }
       }
     }
+  },
+  "capstone": {
+    "title": "Final DevOps Capstone",
+    "status": "locked",
+    "file": "capstone/devops-capstone.md",
+    "unlocksAfter": "All Linux, Docker, and Kubernetes levels (through CKS) complete"
   },
   "weakAreas": [],
   "achievements": [],

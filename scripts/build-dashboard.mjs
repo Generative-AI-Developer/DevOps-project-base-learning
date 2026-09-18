@@ -126,6 +126,12 @@ const skills = (progress.skillsUnlocked || []).length
   ? progress.skillsUnlocked.map((s) => `<span class="skill">${escapeHtml(s)}</span>`).join("")
   : `<span class="muted">No skills unlocked yet.</span>`;
 
+const cap = progress.capstone;
+const capstone = cap
+  ? `<div class="panel"><b>${ICON[cap.status] || "🔒"} ${escapeHtml(cap.title)}</b>
+       <div class="muted" style="margin-top:6px">${escapeHtml(cap.unlocksAfter || "")}</div></div>`
+  : "";
+
 // ---- page ----------------------------------------------------------------
 
 const html = `<!doctype html>
@@ -198,6 +204,7 @@ const html = `<!doctype html>
   <div class="panel"><b>⚠️ Weak areas to fix</b>${weak}</div>
   <div class="panel"><b>🏅 Achievements</b><div style="margin-top:8px">${badges}</div></div>
   <div class="panel"><b>🧠 Skills unlocked</b><div style="margin-top:8px">${skills}</div></div>
+  ${capstone}
 
   <footer>Generated from progress.json on ${new Date().toISOString().slice(0,10)} ·
     This page works offline. Re-run <code>node scripts/build-dashboard.mjs</code> after any change.</footer>
