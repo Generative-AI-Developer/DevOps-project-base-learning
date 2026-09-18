@@ -1,0 +1,18 @@
+# Node / tooling
+node_modules/
+npm-debug.log*
+
+# OS cruft
+.DS_Store
+Thumbs.db
+*.swp
+
+# Secrets — never commit real API keys or kubeconfigs
+.env
+*.local.env
+kubeconfig
+*.kubeconfig
+secrets/
+
+# NOTE: submissions/ is intentionally NOT ignored.
+# Your submitted work is part of your durable learning history and stays tracked.

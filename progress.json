@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "student": {
+    "name": "",
+    "email": "m.asifktr@gmail.com",
+    "startedAt": "2026-09-18",
+    "goal": "Score strongly on CKAD, CKA, CKS and the Anthropic certs (CCAO-F, CCDV-F, CCAR-F, CCAR-P)."
+  },
+  "settings": {
+    "mainTrack": "DevOps line (Linux -> Docker -> Kubernetes)",
+    "sideTrack": "Anthropic / Claude",
+    "suggestedCadence": "About 70% time on the DevOps line, 30% on Anthropic. Switch to single-focus sprints before an exam."
+  },
+  "gatingRules": {
+    "withinLevel": "Project N+1 unlocks only after Project N is completed.",
+    "withinTrack": "The next level unlocks only after every project in the current level is completed.",
+    "devopsLine": "Docker Beginner unlocks after Linux Beginner is complete. Kubernetes Beginner unlocks after Docker Beginner is complete. Higher levels still follow the within-track rule.",
+    "kubernetesCert": "Certification level unlocks after Kubernetes Advanced is complete. CKS unlocks only after CKA is complete.",
+    "anthropicLine": "Fully independent. Starts unlocked. Never blocked by the DevOps line.",
+    "weakAreaGate": "If a mock/timed exam scores a domain below threshold, that domain is added to weakAreas and blocks the next stage until remediation passes."
+  },
+  "tracks": {
+    "linux": {
+      "title": "Linux",
+      "line": "devops",
+      "levels": {
+        "beginner":     { "status": "active", "plannedProjects": 6, "projects": {
+          "project-01": {
+            "title": "Move Around Linux: Your First Commands",
+            "status": "unlocked", "order": 1, "attempts": 0, "evidence": [],
+            "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {}
+          },
+          "project-02": {
+            "title": "Organize Files Like an Engineer",
+            "status": "locked", "order": 2, "attempts": 0, "evidence": [],
+            "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {}
+          },
+          "project-03": {
+            "title": "Lock It Down: Users and Permissions",
+            "status": "locked", "order": 3, "attempts": 0, "evidence": [],
+            "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {}
+          },
+          "project-04": {
+            "title": "Watch and Control Running Programs",
+            "status": "locked", "order": 4, "attempts": 0, "evidence": [],
+            "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {}
+          },
+          "project-05": {
+            "title": "Install and Remove Software Safely",
+            "status": "locked", "order": 5, "attempts": 0, "evidence": [],
+            "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {}
+          },
+          "project-06": {
+            "title": "Build Your First Bash Script (Level Boss)",
+            "status": "locked", "order": 6, "attempts": 0, "evidence": [],
+            "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {}
+          }
+        } },
+        "intermediate": { "status": "locked", "plannedProjects": 6, "projects": {
+          "project-01": { "title": "Build an Automated Backup System", "status": "locked", "order": 1, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+          "project-02": { "title": "Build a Log Monitor with Alerts", "status": "locked", "order": 2, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+          "project-03": { "title": "Run Your Program as a Service", "status": "locked", "order": 3, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+          "project-04": { "title": "Automate a Server Health Check", "status": "locked", "order": 4, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+          "project-05": { "title": "Find the Broken Network Step", "status": "locked", "order": 5, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+          "project-06": { "title": "Build a Log Analyzer (Level Boss)", "status": "locked", "order": 6, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} }
+        } },
+        "advanced":     { "status": "locked", "plannedProjects": 6, "projects": {
+          "project-01": { "title": "Write a Production-Safe Script", "status": "locked", "order": 1, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+          "project-02": { "title": "Control Routing and Build a Firewall", "status": "locked", "order": 2, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+          "project-03": { "title": "Investigate a Slow Server", "status": "locked", "order": 3, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+          "project-04": { "title": "Harden a Server", "status": "locked", "order": 4, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+          "project-05": { "title": "Build a Monitoring and Alert Tool", "status": "locked", "order": 5, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+          "project-06": { "title": "Automate Full Server Setup (Linux Track Boss)", "status": "locked", "order": 6, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} }
+        } }
+      }
+    },
+    "docker": {
+      "title": "Docker",
+      "line": "devops",
+      "levels": {
+        "beginner":     { "status": "locked", "plannedProjects": 6, "projects": {} },
+        "intermediate": { "status": "locked", "plannedProjects": 7, "projects": {} },
+        "advanced":     { "status": "locked", "plannedProjects": 7, "projects": {} }
+      }
+    },
+    "kubernetes": {
+      "title": "Kubernetes",
+      "line": "devops",
+      "levels": {
+        "beginner":     { "status": "locked", "plannedProjects": 8, "projects": {} },
+        "intermediate": { "status": "locked", "plannedProjects": 8, "projects": {} },
+        "advanced":     { "status": "locked", "plannedProjects": 10, "projects": {} },
+        "certification": {
+          "status": "locked",
+          "exams": {
+            "ckad": { "status": "locked", "plannedProjects": 5, "projects": {} },
+            "cka":  { "status": "locked", "plannedProjects": 5, "projects": {} },
+            "cks":  { "status": "locked", "plannedProjects": 6, "projects": {} }
+          }
+        }
+      }
+    },
+    "anthropic": {
+      "title": "Anthropic / Claude",
+      "line": "anthropic",
+      "levels": {
+        "beginner":     { "status": "active", "plannedProjects": 5, "projects": {
+          "project-01": {
+            "title": "Talk to Claude: Your First Good Prompt",
+            "status": "unlocked",
+            "order": 1,
+            "attempts": 0,
+            "evidence": [],
+            "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" },
+            "domainScores": {}
+          }
+        } },
+        "intermediate": { "status": "locked", "plannedProjects": 6, "projects": {} },
+        "advanced":     { "status": "locked", "plannedProjects": 6, "projects": {} },
+        "certification": {
+          "status": "locked",
+          "exams": {
+            "ccao-f": { "status": "locked", "plannedProjects": 4, "projects": {} },
+            "ccdv-f": { "status": "locked", "plannedProjects": 5, "projects": {} },
+            "ccar-f": { "status": "locked", "plannedProjects": 5, "projects": {} },
+            "ccar-p": { "status": "locked", "plannedProjects": 5, "projects": {} }
+          }
+        }
+      }
+    }
+  },
+  "weakAreas": [],
+  "achievements": [],
+  "skillsUnlocked": [],
+  "overallPercent": 0
+}
