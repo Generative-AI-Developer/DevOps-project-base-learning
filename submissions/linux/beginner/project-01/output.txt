@@ -1,0 +1,24 @@
+=== Linux Beginner Project 1 — my work ===
+
+$ pwd
+/home/asif-tech/Desktop/DevOps-project-base-learning/submissions/linux/beginner/project-01
+
+$ ls -ld ~/linux-lab
+drwxrwxr-x 2 asif-tech asif-tech 4096 Sep 18 18:20 /home/asif-tech/linux-lab
+
+$ cat /etc/hostname
+asif-tech
+
+$ head -n 5 /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+
+$ tail -n 3 /etc/passwd
+snap_daemon:x:584788:584788::/nonexistent:/usr/bin/false
+redis:x:122:124::/var/lib/redis:/usr/sbin/nologin
+postgres:x:123:125:PostgreSQL administrator,,,:/var/lib/postgresql:/bin/bash
+
+How I solved it: I used pwd to see where I am, cd and mkdir to move and make folders, and cat, head, and tail to read files.

@@ -49,6 +49,20 @@ Then open `dashboard.html` in any browser. This is just a progress map. No inter
 
 > **Tip:** `course.html` is the main page to read and study. `dashboard.html` is just your score. After you complete a project, re-run both scripts to refresh them.
 
+### Grade a project yourself (instant, offline)
+```bash
+bash grade.sh                 # grades your current project
+bash grade.sh linux-beginner-01   # grades a specific one
+```
+It prints ✅/❌ for the testable parts and a PASS/NEEDS-WORK verdict. For the full official grade, submit to Claude: say "I submit ...".
+
+### Reset / redo a project
+```bash
+bash reset.sh                 # reset your current project
+bash reset.sh linux-beginner-02   # reset a specific one
+```
+It backs up your old work (nothing is deleted for good — saved under `submissions/.reset-backups/`) and sets the project back to ▶️ so you can redo it. It asks you to confirm first, and never changes other projects.
+
 ---
 
 ## Two paths at the same time (parallel learning)

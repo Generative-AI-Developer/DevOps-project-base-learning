@@ -27,12 +27,13 @@
         "beginner":     { "status": "active", "plannedProjects": 6, "projects": {
           "project-01": {
             "title": "Move Around Linux: Your First Commands",
-            "status": "unlocked", "order": 1, "attempts": 0, "evidence": [],
-            "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {}
+            "status": "completed", "order": 1, "attempts": 1,
+            "evidence": ["submissions/linux/beginner/project-01/output.txt"],
+            "evaluation": { "passedAt": "2026-09-18", "criteriaMet": ["pwd","ls -l /etc","~/linux-lab created","cat /etc/hostname","head -n 5 /etc/passwd","tail -n 3 /etc/passwd"], "notes": "All 6 tasks correct; evidence saved; grade.sh 3/3." }, "domainScores": {}
           },
           "project-02": {
             "title": "Organize Files Like an Engineer",
-            "status": "locked", "order": 2, "attempts": 0, "evidence": [],
+            "status": "unlocked", "order": 2, "attempts": 0, "evidence": [],
             "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {}
           },
           "project-03": {
@@ -248,7 +249,7 @@
     "unlocksAfter": "All Linux, Docker, and Kubernetes levels (through CKS) complete"
   },
   "weakAreas": [],
-  "achievements": [],
-  "skillsUnlocked": [],
-  "overallPercent": 0
+  "achievements": ["🎉 First steps — completed your very first project!"],
+  "skillsUnlocked": ["terminal navigation (pwd, ls, cd)", "reading files (cat, head, tail)"],
+  "overallPercent": 1
 }
