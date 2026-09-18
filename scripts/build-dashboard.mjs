@@ -144,6 +144,10 @@ const html = `<!doctype html>
   *{box-sizing:border-box}
   body{margin:0;font:15px/1.55 system-ui,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--ink);padding:24px}
   h1{margin:0 0 4px} .sub{color:var(--muted);margin:0 0 18px}
+  .topbar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
+  .openbtn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;
+           border-radius:10px;padding:9px 16px;font-weight:600;font-size:14px}
+  .openbtn:hover{filter:brightness(1.1)}
   .overall{display:flex;align-items:center;gap:14px;background:var(--panel);border:1px solid var(--line);
            border-radius:14px;padding:16px 18px;margin-bottom:22px}
   .ring{font-size:30px;font-weight:800;color:var(--good)}
@@ -175,7 +179,10 @@ const html = `<!doctype html>
   footer{color:var(--muted);font-size:12px;margin-top:22px}
 </style></head>
 <body>
-  <h1>My Learning Dashboard 🎮</h1>
+  <div class="topbar">
+    <h1>My Learning Dashboard 🎮</h1>
+    <a class="openbtn" href="course.html">📖 Open Course Reader (lessons &amp; projects)</a>
+  </div>
   <p class="sub">Goal: ${escapeHtml(progress.student.goal || "")}</p>
 
   <div class="overall">

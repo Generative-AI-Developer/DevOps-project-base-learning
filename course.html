@@ -41,12 +41,15 @@
   .welcome{color:var(--muted)}
   .btn{background:var(--accent);color:#fff;border:0;border-radius:8px;padding:6px 12px;cursor:pointer;font-size:13px}
   .legend{font-size:12px;color:var(--muted);margin-left:auto}
+  .dashlink{background:var(--accent);color:#fff;text-decoration:none;border-radius:8px;padding:6px 12px;font-size:13px;font-weight:600}
+  .dashlink:hover{filter:brightness(1.1)}
 </style></head>
 <body>
   <header>
     <button class="btn" id="menuBtn" style="display:none">☰</button>
     <h1>🎓 Course Reader</h1>
-    <span class="legend">✅ done · ▶️ open · 🔒 locked — you can read any lesson, but do the projects in order.</span>
+    <span class="legend">✅ done · ▶️ open · 🔒 locked — read any lesson, but do the projects in order.</span>
+    <a class="dashlink" href="dashboard.html">📊 Dashboard</a>
   </header>
   <div class="layout">
     <nav class="side" id="side"></nav>
