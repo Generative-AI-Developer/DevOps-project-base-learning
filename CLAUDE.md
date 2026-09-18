@@ -148,6 +148,27 @@ Tracks: `linux`, `docker`, `kubernetes`, `anthropic`. Levels: `beginner`, `inter
 
 ---
 
+## Instant grading (`bash grade.sh`)
+
+The student can self-grade the **testable** parts of a project offline:
+```bash
+bash grade.sh                 # grades the current unlocked project
+bash grade.sh linux-beginner-01   # grades a specific one
+```
+`grade.sh` finds the current project in `progress.json` and runs the matching
+checker at `scripts/checks/<name>.sh` (name = `<track>-<level>-NN`, or
+`<cert>-NN` for cert levels). Each checker prints ✅/❌ per testable criterion,
+an auto-grade %, the "look-only" tasks the student must self-confirm, and a
+PASS / NEEDS-WORK verdict with fix hints.
+
+**Mentor rule:** when the student **starts** a project, build its checker at
+`scripts/checks/<name>.sh` (only test things that leave a real result — a file,
+a script's output, a running container, a Pod, a `curl` 200 — never claim to
+verify a "show the output" task). This gives instant offline grading that works
+even with no subscription. The strict/official grade (including written
+explanations and open-ended parts) is still done by you when the student says
+"I submit ...".
+
 ## When you author new content
 
 - Use the templates in `templates/`. Keep **all** their sections.
