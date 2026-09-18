@@ -145,9 +145,28 @@
         "certification": {
           "status": "locked",
           "exams": {
-            "ckad": { "status": "locked", "plannedProjects": 5, "projects": {} },
-            "cka":  { "status": "locked", "plannedProjects": 5, "projects": {} },
-            "cks":  { "status": "locked", "plannedProjects": 6, "projects": {} }
+            "ckad": { "status": "locked", "plannedProjects": 5, "projects": {
+              "project-01": { "title": "CKAD Drill: Application Design and Build (20%)", "status": "locked", "order": 1, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+              "project-02": { "title": "CKAD Drill: Application Deployment (20%)", "status": "locked", "order": 2, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+              "project-03": { "title": "CKAD Drill: Environment, Config and Security (25%)", "status": "locked", "order": 3, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+              "project-04": { "title": "CKAD Drill: Services and Networking (20%)", "status": "locked", "order": 4, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+              "project-05": { "title": "CKAD Drill: Observability + Take the Mock Exam", "status": "locked", "order": 5, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} }
+            } },
+            "cka":  { "status": "locked", "plannedProjects": 5, "projects": {
+              "project-01": { "title": "CKA Drill: Architecture, Install & Config (25%)", "status": "locked", "order": 1, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+              "project-02": { "title": "CKA Drill: Workloads and Scheduling (15%)", "status": "locked", "order": 2, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+              "project-03": { "title": "CKA Drill: Services, Networking and Storage (20% + 10%)", "status": "locked", "order": 3, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+              "project-04": { "title": "CKA Drill: Troubleshooting (30%)", "status": "locked", "order": 4, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+              "project-05": { "title": "CKA: Take the Mock Exam", "status": "locked", "order": 5, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} }
+            } },
+            "cks":  { "status": "locked", "plannedProjects": 6, "projects": {
+              "project-01": { "title": "CKS Drill: Cluster Setup & Hardening (10% + 15%)", "status": "locked", "order": 1, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+              "project-02": { "title": "CKS Drill: System Hardening (15%)", "status": "locked", "order": 2, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+              "project-03": { "title": "CKS Drill: Minimize Microservice Vulnerabilities (20%)", "status": "locked", "order": 3, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+              "project-04": { "title": "CKS Drill: Supply Chain Security (20%)", "status": "locked", "order": 4, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+              "project-05": { "title": "CKS Drill: Monitoring, Logging & Runtime Security (20%)", "status": "locked", "order": 5, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+              "project-06": { "title": "CKS: Take the Mock Exam", "status": "locked", "order": 6, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} }
+            } }
           }
         }
       }
