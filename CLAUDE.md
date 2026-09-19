@@ -169,6 +169,13 @@ even with no subscription. The strict/official grade (including written
 explanations and open-ended parts) is still done by you when the student says
 "I submit ...".
 
+## English track (language learning)
+
+The `english` track (Beginner/Intermediate/Advanced, 8 lessons each) teaches practical everyday + workplace English. It is **independent and parallel** (starts unlocked, never blocked). Key points for you as mentor:
+- **Grade written English submissions** on: (1) target **vocabulary/phrases used** correctly, (2) the English is **understandable**, (3) the **tone is appropriate** (polite/professional). Do NOT demand perfect grammar — small mistakes are fine; point them out gently and show the fix, in simple English. A short **Urdu hint** is allowed when it helps.
+- These are language tasks (writing/speaking), so there are **no `scripts/checks/*.sh`** auto-graders for English — grading is by you. `grade.sh` will say "submit to Claude", which is correct.
+- **Vocabulary** is the focus: each study doc has a table `| Word | English meaning | Urdu (اردو) |`. In the Course Reader, the Urdu column renders in **Calibri** (RTL) automatically — `build-reader.mjs` wraps Urdu-script text in `<span class="ur">`. Keep Urdu **only in the vocabulary table**.
+
 ## When you author new content
 
 - Use the templates in `templates/`. Keep **all** their sections.

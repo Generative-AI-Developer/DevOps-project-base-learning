@@ -17,6 +17,7 @@
     "devopsLine": "Docker Beginner unlocks after Linux Beginner is complete. Kubernetes Beginner unlocks after Docker Beginner is complete. Higher levels still follow the within-track rule.",
     "kubernetesCert": "Certification level unlocks after Kubernetes Advanced is complete. CKS unlocks only after CKA is complete.",
     "anthropicLine": "Fully independent. Starts unlocked. Never blocked by the DevOps line.",
+    "englishLine": "Fully independent. Starts unlocked. Never blocked by other tracks. Strict order within a level (Lesson N+1 unlocks after Lesson N is completed).",
     "weakAreaGate": "If a mock/timed exam scores a domain below threshold, that domain is added to weakAreas and blocks the next stage until remediation passes."
   },
   "tracks": {
@@ -24,150 +25,1142 @@
       "title": "Linux",
       "line": "devops",
       "levels": {
-        "beginner":     { "status": "active", "plannedProjects": 6, "projects": {
-          "project-01": {
-            "title": "Move Around Linux: Your First Commands",
-            "status": "completed", "order": 1, "attempts": 1,
-            "evidence": ["submissions/linux/beginner/project-01/output.txt"],
-            "evaluation": { "passedAt": "2026-09-18", "criteriaMet": ["pwd","ls -l /etc","~/linux-lab created","cat /etc/hostname","head -n 5 /etc/passwd","tail -n 3 /etc/passwd"], "notes": "All 6 tasks correct; evidence saved; grade.sh 3/3." }, "domainScores": {}
-          },
-          "project-02": {
-            "title": "Organize Files Like an Engineer",
-            "status": "unlocked", "order": 2, "attempts": 0, "evidence": [],
-            "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {}
-          },
-          "project-03": {
-            "title": "Lock It Down: Users and Permissions",
-            "status": "locked", "order": 3, "attempts": 0, "evidence": [],
-            "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {}
-          },
-          "project-04": {
-            "title": "Watch and Control Running Programs",
-            "status": "locked", "order": 4, "attempts": 0, "evidence": [],
-            "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {}
-          },
-          "project-05": {
-            "title": "Install and Remove Software Safely",
-            "status": "locked", "order": 5, "attempts": 0, "evidence": [],
-            "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {}
-          },
-          "project-06": {
-            "title": "Build Your First Bash Script (Level Boss)",
-            "status": "locked", "order": 6, "attempts": 0, "evidence": [],
-            "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {}
+        "beginner": {
+          "status": "active",
+          "plannedProjects": 6,
+          "projects": {
+            "project-01": {
+              "title": "Move Around Linux: Your First Commands",
+              "status": "completed",
+              "order": 1,
+              "attempts": 1,
+              "evidence": [
+                "submissions/linux/beginner/project-01/output.txt"
+              ],
+              "evaluation": {
+                "passedAt": "2026-09-18",
+                "criteriaMet": [
+                  "pwd",
+                  "ls -l /etc",
+                  "~/linux-lab created",
+                  "cat /etc/hostname",
+                  "head -n 5 /etc/passwd",
+                  "tail -n 3 /etc/passwd"
+                ],
+                "notes": "All 6 tasks correct; evidence saved; grade.sh 3/3."
+              },
+              "domainScores": {}
+            },
+            "project-02": {
+              "title": "Organize Files Like an Engineer",
+              "status": "unlocked",
+              "order": 2,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-03": {
+              "title": "Lock It Down: Users and Permissions",
+              "status": "locked",
+              "order": 3,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-04": {
+              "title": "Watch and Control Running Programs",
+              "status": "locked",
+              "order": 4,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-05": {
+              "title": "Install and Remove Software Safely",
+              "status": "locked",
+              "order": 5,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-06": {
+              "title": "Build Your First Bash Script (Level Boss)",
+              "status": "locked",
+              "order": 6,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            }
           }
-        } },
-        "intermediate": { "status": "locked", "plannedProjects": 6, "projects": {
-          "project-01": { "title": "Build an Automated Backup System", "status": "locked", "order": 1, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-02": { "title": "Build a Log Monitor with Alerts", "status": "locked", "order": 2, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-03": { "title": "Run Your Program as a Service", "status": "locked", "order": 3, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-04": { "title": "Automate a Server Health Check", "status": "locked", "order": 4, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-05": { "title": "Find the Broken Network Step", "status": "locked", "order": 5, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-06": { "title": "Build a Log Analyzer (Level Boss)", "status": "locked", "order": 6, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} }
-        } },
-        "advanced":     { "status": "locked", "plannedProjects": 6, "projects": {
-          "project-01": { "title": "Write a Production-Safe Script", "status": "locked", "order": 1, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-02": { "title": "Control Routing and Build a Firewall", "status": "locked", "order": 2, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-03": { "title": "Investigate a Slow Server", "status": "locked", "order": 3, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-04": { "title": "Harden a Server", "status": "locked", "order": 4, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-05": { "title": "Build a Monitoring and Alert Tool", "status": "locked", "order": 5, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-06": { "title": "Automate Full Server Setup (Linux Track Boss)", "status": "locked", "order": 6, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} }
-        } }
+        },
+        "intermediate": {
+          "status": "locked",
+          "plannedProjects": 6,
+          "projects": {
+            "project-01": {
+              "title": "Build an Automated Backup System",
+              "status": "locked",
+              "order": 1,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-02": {
+              "title": "Build a Log Monitor with Alerts",
+              "status": "locked",
+              "order": 2,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-03": {
+              "title": "Run Your Program as a Service",
+              "status": "locked",
+              "order": 3,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-04": {
+              "title": "Automate a Server Health Check",
+              "status": "locked",
+              "order": 4,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-05": {
+              "title": "Find the Broken Network Step",
+              "status": "locked",
+              "order": 5,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-06": {
+              "title": "Build a Log Analyzer (Level Boss)",
+              "status": "locked",
+              "order": 6,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            }
+          }
+        },
+        "advanced": {
+          "status": "locked",
+          "plannedProjects": 6,
+          "projects": {
+            "project-01": {
+              "title": "Write a Production-Safe Script",
+              "status": "locked",
+              "order": 1,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-02": {
+              "title": "Control Routing and Build a Firewall",
+              "status": "locked",
+              "order": 2,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-03": {
+              "title": "Investigate a Slow Server",
+              "status": "locked",
+              "order": 3,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-04": {
+              "title": "Harden a Server",
+              "status": "locked",
+              "order": 4,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-05": {
+              "title": "Build a Monitoring and Alert Tool",
+              "status": "locked",
+              "order": 5,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-06": {
+              "title": "Automate Full Server Setup (Linux Track Boss)",
+              "status": "locked",
+              "order": 6,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            }
+          }
+        }
       }
     },
     "docker": {
       "title": "Docker",
       "line": "devops",
       "levels": {
-        "beginner":     { "status": "locked", "plannedProjects": 6, "projects": {
-          "project-01": { "title": "Run and Manage Your First Containers", "status": "locked", "order": 1, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-02": { "title": "Pull, Tag, and Explore Images", "status": "locked", "order": 2, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-03": { "title": "Build Your Own Image with a Dockerfile", "status": "locked", "order": 3, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-04": { "title": "Keep Data Safe with Volumes and Config with Env Vars", "status": "locked", "order": 4, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-05": { "title": "Connect Containers on a Network", "status": "locked", "order": 5, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-06": { "title": "Containerize a Real App (Level Boss)", "status": "locked", "order": 6, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} }
-        } },
-        "intermediate": { "status": "locked", "plannedProjects": 7, "projects": {
-          "project-01": { "title": "Run a Multi-Container App by Hand", "status": "locked", "order": 1, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-02": { "title": "Run the Whole App with Docker Compose", "status": "locked", "order": 2, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-03": { "title": "Isolate the Database with Custom Networks", "status": "locked", "order": 3, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-04": { "title": "Make Data Survive and Back It Up", "status": "locked", "order": 4, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-05": { "title": "Add Health Checks and Startup Order", "status": "locked", "order": 5, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-06": { "title": "Debug Broken Containers", "status": "locked", "order": 6, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-07": { "title": "Build a Build-Test-Push Pipeline (Level Boss)", "status": "locked", "order": 7, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} }
-        } },
-        "advanced":     { "status": "locked", "plannedProjects": 7, "projects": {
-          "project-01": { "title": "Shrink an Image with a Multi-Stage Build", "status": "locked", "order": 1, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-02": { "title": "Run Your App as a Non-Root User", "status": "locked", "order": 2, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-03": { "title": "Harden a Container (Drop Powers, Read-Only)", "status": "locked", "order": 3, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-04": { "title": "Put a Reverse Proxy in Front", "status": "locked", "order": 4, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-05": { "title": "Make Your App Observable", "status": "locked", "order": 5, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-06": { "title": "Set Limits and Auto-Restart", "status": "locked", "order": 6, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-07": { "title": "Ship a Production-Ready Service (Docker Track Boss)", "status": "locked", "order": 7, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} }
-        } }
+        "beginner": {
+          "status": "locked",
+          "plannedProjects": 6,
+          "projects": {
+            "project-01": {
+              "title": "Run and Manage Your First Containers",
+              "status": "locked",
+              "order": 1,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-02": {
+              "title": "Pull, Tag, and Explore Images",
+              "status": "locked",
+              "order": 2,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-03": {
+              "title": "Build Your Own Image with a Dockerfile",
+              "status": "locked",
+              "order": 3,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-04": {
+              "title": "Keep Data Safe with Volumes and Config with Env Vars",
+              "status": "locked",
+              "order": 4,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-05": {
+              "title": "Connect Containers on a Network",
+              "status": "locked",
+              "order": 5,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-06": {
+              "title": "Containerize a Real App (Level Boss)",
+              "status": "locked",
+              "order": 6,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            }
+          }
+        },
+        "intermediate": {
+          "status": "locked",
+          "plannedProjects": 7,
+          "projects": {
+            "project-01": {
+              "title": "Run a Multi-Container App by Hand",
+              "status": "locked",
+              "order": 1,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-02": {
+              "title": "Run the Whole App with Docker Compose",
+              "status": "locked",
+              "order": 2,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-03": {
+              "title": "Isolate the Database with Custom Networks",
+              "status": "locked",
+              "order": 3,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-04": {
+              "title": "Make Data Survive and Back It Up",
+              "status": "locked",
+              "order": 4,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-05": {
+              "title": "Add Health Checks and Startup Order",
+              "status": "locked",
+              "order": 5,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-06": {
+              "title": "Debug Broken Containers",
+              "status": "locked",
+              "order": 6,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-07": {
+              "title": "Build a Build-Test-Push Pipeline (Level Boss)",
+              "status": "locked",
+              "order": 7,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            }
+          }
+        },
+        "advanced": {
+          "status": "locked",
+          "plannedProjects": 7,
+          "projects": {
+            "project-01": {
+              "title": "Shrink an Image with a Multi-Stage Build",
+              "status": "locked",
+              "order": 1,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-02": {
+              "title": "Run Your App as a Non-Root User",
+              "status": "locked",
+              "order": 2,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-03": {
+              "title": "Harden a Container (Drop Powers, Read-Only)",
+              "status": "locked",
+              "order": 3,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-04": {
+              "title": "Put a Reverse Proxy in Front",
+              "status": "locked",
+              "order": 4,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-05": {
+              "title": "Make Your App Observable",
+              "status": "locked",
+              "order": 5,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-06": {
+              "title": "Set Limits and Auto-Restart",
+              "status": "locked",
+              "order": 6,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-07": {
+              "title": "Ship a Production-Ready Service (Docker Track Boss)",
+              "status": "locked",
+              "order": 7,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            }
+          }
+        }
       }
     },
     "kubernetes": {
       "title": "Kubernetes",
       "line": "devops",
       "levels": {
-        "beginner":     { "status": "locked", "plannedProjects": 8, "projects": {
-          "project-01": { "title": "Meet Your Cluster with kubectl", "status": "locked", "order": 1, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-02": { "title": "Run and Inspect a Pod", "status": "locked", "order": 2, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-03": { "title": "Run Many Copies with a Deployment", "status": "locked", "order": 3, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-04": { "title": "Give Your App a Stable Address with a Service", "status": "locked", "order": 4, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-05": { "title": "Configure an App with a ConfigMap", "status": "locked", "order": 5, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-06": { "title": "Handle Passwords with Secrets", "status": "locked", "order": 6, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-07": { "title": "Organize with Namespaces and Labels", "status": "locked", "order": 7, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-08": { "title": "Deploy a Full App (K8s Beginner Boss)", "status": "locked", "order": 8, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} }
-        } },
-        "intermediate": { "status": "locked", "plannedProjects": 8, "projects": {
-          "project-01": { "title": "Add Health Probes to a Pod", "status": "locked", "order": 1, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-02": { "title": "Set Requests and Limits (and See QoS)", "status": "locked", "order": 2, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-03": { "title": "Init Containers and a Sidecar", "status": "locked", "order": 3, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-04": { "title": "Run Tasks with Jobs and CronJobs", "status": "locked", "order": 4, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-05": { "title": "Keep Data with a PersistentVolumeClaim", "status": "locked", "order": 5, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-06": { "title": "Run a Stateful App with a StatefulSet", "status": "locked", "order": 6, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-07": { "title": "Route Traffic with Ingress", "status": "locked", "order": 7, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-08": { "title": "Build a Full Multi-Service App (K8s Intermediate Boss)", "status": "locked", "order": 8, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} }
-        } },
-        "advanced":     { "status": "locked", "plannedProjects": 10, "projects": {
-          "project-01": { "title": "Map Your Cluster's Components", "status": "locked", "order": 1, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-02": { "title": "Build a Cluster with kubeadm", "status": "locked", "order": 2, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-03": { "title": "Back Up and Restore etcd", "status": "locked", "order": 3, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-04": { "title": "Control Where Pods Run", "status": "locked", "order": 4, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-05": { "title": "DaemonSets and Static Pods", "status": "locked", "order": 5, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-06": { "title": "Lock Down Pod Traffic with NetworkPolicies", "status": "locked", "order": 6, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-07": { "title": "Control Access with RBAC", "status": "locked", "order": 7, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-08": { "title": "Autoscale an App with HPA", "status": "locked", "order": 8, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-09": { "title": "Fix a Broken Cluster", "status": "locked", "order": 9, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-10": { "title": "Survive a Disaster (K8s Advanced Boss)", "status": "locked", "order": 10, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} }
-        } },
+        "beginner": {
+          "status": "locked",
+          "plannedProjects": 8,
+          "projects": {
+            "project-01": {
+              "title": "Meet Your Cluster with kubectl",
+              "status": "locked",
+              "order": 1,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-02": {
+              "title": "Run and Inspect a Pod",
+              "status": "locked",
+              "order": 2,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-03": {
+              "title": "Run Many Copies with a Deployment",
+              "status": "locked",
+              "order": 3,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-04": {
+              "title": "Give Your App a Stable Address with a Service",
+              "status": "locked",
+              "order": 4,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-05": {
+              "title": "Configure an App with a ConfigMap",
+              "status": "locked",
+              "order": 5,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-06": {
+              "title": "Handle Passwords with Secrets",
+              "status": "locked",
+              "order": 6,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-07": {
+              "title": "Organize with Namespaces and Labels",
+              "status": "locked",
+              "order": 7,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-08": {
+              "title": "Deploy a Full App (K8s Beginner Boss)",
+              "status": "locked",
+              "order": 8,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            }
+          }
+        },
+        "intermediate": {
+          "status": "locked",
+          "plannedProjects": 8,
+          "projects": {
+            "project-01": {
+              "title": "Add Health Probes to a Pod",
+              "status": "locked",
+              "order": 1,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-02": {
+              "title": "Set Requests and Limits (and See QoS)",
+              "status": "locked",
+              "order": 2,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-03": {
+              "title": "Init Containers and a Sidecar",
+              "status": "locked",
+              "order": 3,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-04": {
+              "title": "Run Tasks with Jobs and CronJobs",
+              "status": "locked",
+              "order": 4,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-05": {
+              "title": "Keep Data with a PersistentVolumeClaim",
+              "status": "locked",
+              "order": 5,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-06": {
+              "title": "Run a Stateful App with a StatefulSet",
+              "status": "locked",
+              "order": 6,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-07": {
+              "title": "Route Traffic with Ingress",
+              "status": "locked",
+              "order": 7,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-08": {
+              "title": "Build a Full Multi-Service App (K8s Intermediate Boss)",
+              "status": "locked",
+              "order": 8,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            }
+          }
+        },
+        "advanced": {
+          "status": "locked",
+          "plannedProjects": 10,
+          "projects": {
+            "project-01": {
+              "title": "Map Your Cluster's Components",
+              "status": "locked",
+              "order": 1,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-02": {
+              "title": "Build a Cluster with kubeadm",
+              "status": "locked",
+              "order": 2,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-03": {
+              "title": "Back Up and Restore etcd",
+              "status": "locked",
+              "order": 3,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-04": {
+              "title": "Control Where Pods Run",
+              "status": "locked",
+              "order": 4,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-05": {
+              "title": "DaemonSets and Static Pods",
+              "status": "locked",
+              "order": 5,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-06": {
+              "title": "Lock Down Pod Traffic with NetworkPolicies",
+              "status": "locked",
+              "order": 6,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-07": {
+              "title": "Control Access with RBAC",
+              "status": "locked",
+              "order": 7,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-08": {
+              "title": "Autoscale an App with HPA",
+              "status": "locked",
+              "order": 8,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-09": {
+              "title": "Fix a Broken Cluster",
+              "status": "locked",
+              "order": 9,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-10": {
+              "title": "Survive a Disaster (K8s Advanced Boss)",
+              "status": "locked",
+              "order": 10,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            }
+          }
+        },
         "certification": {
           "status": "locked",
           "exams": {
-            "ckad": { "status": "locked", "plannedProjects": 5, "projects": {
-              "project-01": { "title": "CKAD Drill: Application Design and Build (20%)", "status": "locked", "order": 1, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-              "project-02": { "title": "CKAD Drill: Application Deployment (20%)", "status": "locked", "order": 2, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-              "project-03": { "title": "CKAD Drill: Environment, Config and Security (25%)", "status": "locked", "order": 3, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-              "project-04": { "title": "CKAD Drill: Services and Networking (20%)", "status": "locked", "order": 4, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-              "project-05": { "title": "CKAD Drill: Observability + Take the Mock Exam", "status": "locked", "order": 5, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} }
-            } },
-            "cka":  { "status": "locked", "plannedProjects": 5, "projects": {
-              "project-01": { "title": "CKA Drill: Architecture, Install & Config (25%)", "status": "locked", "order": 1, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-              "project-02": { "title": "CKA Drill: Workloads and Scheduling (15%)", "status": "locked", "order": 2, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-              "project-03": { "title": "CKA Drill: Services, Networking and Storage (20% + 10%)", "status": "locked", "order": 3, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-              "project-04": { "title": "CKA Drill: Troubleshooting (30%)", "status": "locked", "order": 4, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-              "project-05": { "title": "CKA: Take the Mock Exam", "status": "locked", "order": 5, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} }
-            } },
-            "cks":  { "status": "locked", "plannedProjects": 6, "projects": {
-              "project-01": { "title": "CKS Drill: Cluster Setup & Hardening (10% + 15%)", "status": "locked", "order": 1, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-              "project-02": { "title": "CKS Drill: System Hardening (15%)", "status": "locked", "order": 2, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-              "project-03": { "title": "CKS Drill: Minimize Microservice Vulnerabilities (20%)", "status": "locked", "order": 3, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-              "project-04": { "title": "CKS Drill: Supply Chain Security (20%)", "status": "locked", "order": 4, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-              "project-05": { "title": "CKS Drill: Monitoring, Logging & Runtime Security (20%)", "status": "locked", "order": 5, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-              "project-06": { "title": "CKS: Take the Mock Exam", "status": "locked", "order": 6, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} }
-            } }
+            "ckad": {
+              "status": "locked",
+              "plannedProjects": 5,
+              "projects": {
+                "project-01": {
+                  "title": "CKAD Drill: Application Design and Build (20%)",
+                  "status": "locked",
+                  "order": 1,
+                  "attempts": 0,
+                  "evidence": [],
+                  "evaluation": {
+                    "passedAt": null,
+                    "criteriaMet": [],
+                    "notes": ""
+                  },
+                  "domainScores": {}
+                },
+                "project-02": {
+                  "title": "CKAD Drill: Application Deployment (20%)",
+                  "status": "locked",
+                  "order": 2,
+                  "attempts": 0,
+                  "evidence": [],
+                  "evaluation": {
+                    "passedAt": null,
+                    "criteriaMet": [],
+                    "notes": ""
+                  },
+                  "domainScores": {}
+                },
+                "project-03": {
+                  "title": "CKAD Drill: Environment, Config and Security (25%)",
+                  "status": "locked",
+                  "order": 3,
+                  "attempts": 0,
+                  "evidence": [],
+                  "evaluation": {
+                    "passedAt": null,
+                    "criteriaMet": [],
+                    "notes": ""
+                  },
+                  "domainScores": {}
+                },
+                "project-04": {
+                  "title": "CKAD Drill: Services and Networking (20%)",
+                  "status": "locked",
+                  "order": 4,
+                  "attempts": 0,
+                  "evidence": [],
+                  "evaluation": {
+                    "passedAt": null,
+                    "criteriaMet": [],
+                    "notes": ""
+                  },
+                  "domainScores": {}
+                },
+                "project-05": {
+                  "title": "CKAD Drill: Observability + Take the Mock Exam",
+                  "status": "locked",
+                  "order": 5,
+                  "attempts": 0,
+                  "evidence": [],
+                  "evaluation": {
+                    "passedAt": null,
+                    "criteriaMet": [],
+                    "notes": ""
+                  },
+                  "domainScores": {}
+                }
+              }
+            },
+            "cka": {
+              "status": "locked",
+              "plannedProjects": 5,
+              "projects": {
+                "project-01": {
+                  "title": "CKA Drill: Architecture, Install & Config (25%)",
+                  "status": "locked",
+                  "order": 1,
+                  "attempts": 0,
+                  "evidence": [],
+                  "evaluation": {
+                    "passedAt": null,
+                    "criteriaMet": [],
+                    "notes": ""
+                  },
+                  "domainScores": {}
+                },
+                "project-02": {
+                  "title": "CKA Drill: Workloads and Scheduling (15%)",
+                  "status": "locked",
+                  "order": 2,
+                  "attempts": 0,
+                  "evidence": [],
+                  "evaluation": {
+                    "passedAt": null,
+                    "criteriaMet": [],
+                    "notes": ""
+                  },
+                  "domainScores": {}
+                },
+                "project-03": {
+                  "title": "CKA Drill: Services, Networking and Storage (20% + 10%)",
+                  "status": "locked",
+                  "order": 3,
+                  "attempts": 0,
+                  "evidence": [],
+                  "evaluation": {
+                    "passedAt": null,
+                    "criteriaMet": [],
+                    "notes": ""
+                  },
+                  "domainScores": {}
+                },
+                "project-04": {
+                  "title": "CKA Drill: Troubleshooting (30%)",
+                  "status": "locked",
+                  "order": 4,
+                  "attempts": 0,
+                  "evidence": [],
+                  "evaluation": {
+                    "passedAt": null,
+                    "criteriaMet": [],
+                    "notes": ""
+                  },
+                  "domainScores": {}
+                },
+                "project-05": {
+                  "title": "CKA: Take the Mock Exam",
+                  "status": "locked",
+                  "order": 5,
+                  "attempts": 0,
+                  "evidence": [],
+                  "evaluation": {
+                    "passedAt": null,
+                    "criteriaMet": [],
+                    "notes": ""
+                  },
+                  "domainScores": {}
+                }
+              }
+            },
+            "cks": {
+              "status": "locked",
+              "plannedProjects": 6,
+              "projects": {
+                "project-01": {
+                  "title": "CKS Drill: Cluster Setup & Hardening (10% + 15%)",
+                  "status": "locked",
+                  "order": 1,
+                  "attempts": 0,
+                  "evidence": [],
+                  "evaluation": {
+                    "passedAt": null,
+                    "criteriaMet": [],
+                    "notes": ""
+                  },
+                  "domainScores": {}
+                },
+                "project-02": {
+                  "title": "CKS Drill: System Hardening (15%)",
+                  "status": "locked",
+                  "order": 2,
+                  "attempts": 0,
+                  "evidence": [],
+                  "evaluation": {
+                    "passedAt": null,
+                    "criteriaMet": [],
+                    "notes": ""
+                  },
+                  "domainScores": {}
+                },
+                "project-03": {
+                  "title": "CKS Drill: Minimize Microservice Vulnerabilities (20%)",
+                  "status": "locked",
+                  "order": 3,
+                  "attempts": 0,
+                  "evidence": [],
+                  "evaluation": {
+                    "passedAt": null,
+                    "criteriaMet": [],
+                    "notes": ""
+                  },
+                  "domainScores": {}
+                },
+                "project-04": {
+                  "title": "CKS Drill: Supply Chain Security (20%)",
+                  "status": "locked",
+                  "order": 4,
+                  "attempts": 0,
+                  "evidence": [],
+                  "evaluation": {
+                    "passedAt": null,
+                    "criteriaMet": [],
+                    "notes": ""
+                  },
+                  "domainScores": {}
+                },
+                "project-05": {
+                  "title": "CKS Drill: Monitoring, Logging & Runtime Security (20%)",
+                  "status": "locked",
+                  "order": 5,
+                  "attempts": 0,
+                  "evidence": [],
+                  "evaluation": {
+                    "passedAt": null,
+                    "criteriaMet": [],
+                    "notes": ""
+                  },
+                  "domainScores": {}
+                },
+                "project-06": {
+                  "title": "CKS: Take the Mock Exam",
+                  "status": "locked",
+                  "order": 6,
+                  "attempts": 0,
+                  "evidence": [],
+                  "evaluation": {
+                    "passedAt": null,
+                    "criteriaMet": [],
+                    "notes": ""
+                  },
+                  "domainScores": {}
+                }
+              }
+            }
           }
         }
       }
@@ -176,69 +1169,557 @@
       "title": "Anthropic / Claude",
       "line": "anthropic",
       "levels": {
-        "beginner":     { "status": "active", "plannedProjects": 5, "projects": {
-          "project-01": {
-            "title": "Talk to Claude: Your First Good Prompt",
-            "status": "unlocked",
-            "order": 1,
-            "attempts": 0,
-            "evidence": [],
-            "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" },
-            "domainScores": {}
-          },
-          "project-02": { "title": "Choose the Right Claude Model", "status": "locked", "order": 2, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-03": { "title": "Give Claude a Role with a System Prompt", "status": "locked", "order": 3, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-04": { "title": "Make Your First Claude API Call", "status": "locked", "order": 4, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-05": { "title": "Build a Tiny Claude Tool (Anthropic Beginner Boss)", "status": "locked", "order": 5, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} }
-        } },
-        "intermediate": { "status": "locked", "plannedProjects": 6, "projects": {
-          "project-01": { "title": "Build a Reliable Classifier with Few-Shot Prompting", "status": "locked", "order": 1, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-02": { "title": "Let Claude Use Your Tool", "status": "locked", "order": 2, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-03": { "title": "Extract Clean Data with Structured Output", "status": "locked", "order": 3, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-04": { "title": "Stream a Live Answer", "status": "locked", "order": 4, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-05": { "title": "Cut Cost with Prompt Caching", "status": "locked", "order": 5, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-06": { "title": "Measure Quality with an Eval (Anthropic Intermediate Boss)", "status": "locked", "order": 6, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} }
-        } },
-        "advanced":     { "status": "locked", "plannedProjects": 6, "projects": {
-          "project-01": { "title": "Build a Multi-Step Agent", "status": "locked", "order": 1, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-02": { "title": "Connect Claude to Tools with MCP", "status": "locked", "order": 2, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-03": { "title": "Build a Grounded Q&A with RAG", "status": "locked", "order": 3, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-04": { "title": "Add Guardrails and Beat Prompt Injection", "status": "locked", "order": 4, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-05": { "title": "Tune Cost and Speed (with Proof)", "status": "locked", "order": 5, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-          "project-06": { "title": "Build an End-to-End Agent (Anthropic Advanced Boss)", "status": "locked", "order": 6, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} }
-        } },
+        "beginner": {
+          "status": "active",
+          "plannedProjects": 5,
+          "projects": {
+            "project-01": {
+              "title": "Talk to Claude: Your First Good Prompt",
+              "status": "unlocked",
+              "order": 1,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-02": {
+              "title": "Choose the Right Claude Model",
+              "status": "locked",
+              "order": 2,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-03": {
+              "title": "Give Claude a Role with a System Prompt",
+              "status": "locked",
+              "order": 3,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-04": {
+              "title": "Make Your First Claude API Call",
+              "status": "locked",
+              "order": 4,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-05": {
+              "title": "Build a Tiny Claude Tool (Anthropic Beginner Boss)",
+              "status": "locked",
+              "order": 5,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            }
+          }
+        },
+        "intermediate": {
+          "status": "locked",
+          "plannedProjects": 6,
+          "projects": {
+            "project-01": {
+              "title": "Build a Reliable Classifier with Few-Shot Prompting",
+              "status": "locked",
+              "order": 1,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-02": {
+              "title": "Let Claude Use Your Tool",
+              "status": "locked",
+              "order": 2,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-03": {
+              "title": "Extract Clean Data with Structured Output",
+              "status": "locked",
+              "order": 3,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-04": {
+              "title": "Stream a Live Answer",
+              "status": "locked",
+              "order": 4,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-05": {
+              "title": "Cut Cost with Prompt Caching",
+              "status": "locked",
+              "order": 5,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-06": {
+              "title": "Measure Quality with an Eval (Anthropic Intermediate Boss)",
+              "status": "locked",
+              "order": 6,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            }
+          }
+        },
+        "advanced": {
+          "status": "locked",
+          "plannedProjects": 6,
+          "projects": {
+            "project-01": {
+              "title": "Build a Multi-Step Agent",
+              "status": "locked",
+              "order": 1,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-02": {
+              "title": "Connect Claude to Tools with MCP",
+              "status": "locked",
+              "order": 2,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-03": {
+              "title": "Build a Grounded Q&A with RAG",
+              "status": "locked",
+              "order": 3,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-04": {
+              "title": "Add Guardrails and Beat Prompt Injection",
+              "status": "locked",
+              "order": 4,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-05": {
+              "title": "Tune Cost and Speed (with Proof)",
+              "status": "locked",
+              "order": 5,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            },
+            "project-06": {
+              "title": "Build an End-to-End Agent (Anthropic Advanced Boss)",
+              "status": "locked",
+              "order": 6,
+              "attempts": 0,
+              "evidence": [],
+              "evaluation": {
+                "passedAt": null,
+                "criteriaMet": [],
+                "notes": ""
+              },
+              "domainScores": {}
+            }
+          }
+        },
         "certification": {
           "status": "locked",
           "exams": {
-            "ccao-f": { "status": "locked", "plannedProjects": 4, "projects": {
-              "project-01": { "title": "CCAO-F Drill: GenAI and Claude Fundamentals", "status": "locked", "order": 1, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-              "project-02": { "title": "CCAO-F Drill: Everyday Claude Use and Prompting", "status": "locked", "order": 2, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-              "project-03": { "title": "CCAO-F Drill: Responsible and Safe Use", "status": "locked", "order": 3, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-              "project-04": { "title": "CCAO-F: Take the Mock Exam", "status": "locked", "order": 4, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} }
-            } },
-            "ccdv-f": { "status": "locked", "plannedProjects": 5, "projects": {
-              "project-01": { "title": "CCDV-F Drill: API Integration", "status": "locked", "order": 1, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-              "project-02": { "title": "CCDV-F Drill: Prompting and Structured Output", "status": "locked", "order": 2, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-              "project-03": { "title": "CCDV-F Drill: Tool Use and Agents", "status": "locked", "order": 3, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-              "project-04": { "title": "CCDV-F Drill: Evals and Cost", "status": "locked", "order": 4, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-              "project-05": { "title": "CCDV-F: Take the Mock Exam", "status": "locked", "order": 5, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} }
-            } },
-            "ccar-f": { "status": "locked", "plannedProjects": 5, "projects": {
-              "project-01": { "title": "CCAR-F Drill: Choose the Right Architecture", "status": "locked", "order": 1, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-              "project-02": { "title": "CCAR-F Drill: Data Privacy by Design", "status": "locked", "order": 2, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-              "project-03": { "title": "CCAR-F Drill: Security Frameworks and Guardrails", "status": "locked", "order": 3, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-              "project-04": { "title": "CCAR-F Drill: Multi-Model Deployment", "status": "locked", "order": 4, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-              "project-05": { "title": "CCAR-F: Take the Mock Exam", "status": "locked", "order": 5, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} }
-            } },
-            "ccar-p": { "status": "locked", "plannedProjects": 5, "projects": {
-              "project-01": { "title": "CCAR-P Drill: Enterprise Architecture at Scale", "status": "locked", "order": 1, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-              "project-02": { "title": "CCAR-P Drill: Reliability and Observability", "status": "locked", "order": 2, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-              "project-03": { "title": "CCAR-P Drill: Cost Governance at Scale", "status": "locked", "order": 3, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-              "project-04": { "title": "CCAR-P Drill: Advanced Deployment and Customization", "status": "locked", "order": 4, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
-              "project-05": { "title": "CCAR-P: Take the Mock Exam (Top Anthropic Cert)", "status": "locked", "order": 5, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} }
-            } }
+            "ccao-f": {
+              "status": "locked",
+              "plannedProjects": 4,
+              "projects": {
+                "project-01": {
+                  "title": "CCAO-F Drill: GenAI and Claude Fundamentals",
+                  "status": "locked",
+                  "order": 1,
+                  "attempts": 0,
+                  "evidence": [],
+                  "evaluation": {
+                    "passedAt": null,
+                    "criteriaMet": [],
+                    "notes": ""
+                  },
+                  "domainScores": {}
+                },
+                "project-02": {
+                  "title": "CCAO-F Drill: Everyday Claude Use and Prompting",
+                  "status": "locked",
+                  "order": 2,
+                  "attempts": 0,
+                  "evidence": [],
+                  "evaluation": {
+                    "passedAt": null,
+                    "criteriaMet": [],
+                    "notes": ""
+                  },
+                  "domainScores": {}
+                },
+                "project-03": {
+                  "title": "CCAO-F Drill: Responsible and Safe Use",
+                  "status": "locked",
+                  "order": 3,
+                  "attempts": 0,
+                  "evidence": [],
+                  "evaluation": {
+                    "passedAt": null,
+                    "criteriaMet": [],
+                    "notes": ""
+                  },
+                  "domainScores": {}
+                },
+                "project-04": {
+                  "title": "CCAO-F: Take the Mock Exam",
+                  "status": "locked",
+                  "order": 4,
+                  "attempts": 0,
+                  "evidence": [],
+                  "evaluation": {
+                    "passedAt": null,
+                    "criteriaMet": [],
+                    "notes": ""
+                  },
+                  "domainScores": {}
+                }
+              }
+            },
+            "ccdv-f": {
+              "status": "locked",
+              "plannedProjects": 5,
+              "projects": {
+                "project-01": {
+                  "title": "CCDV-F Drill: API Integration",
+                  "status": "locked",
+                  "order": 1,
+                  "attempts": 0,
+                  "evidence": [],
+                  "evaluation": {
+                    "passedAt": null,
+                    "criteriaMet": [],
+                    "notes": ""
+                  },
+                  "domainScores": {}
+                },
+                "project-02": {
+                  "title": "CCDV-F Drill: Prompting and Structured Output",
+                  "status": "locked",
+                  "order": 2,
+                  "attempts": 0,
+                  "evidence": [],
+                  "evaluation": {
+                    "passedAt": null,
+                    "criteriaMet": [],
+                    "notes": ""
+                  },
+                  "domainScores": {}
+                },
+                "project-03": {
+                  "title": "CCDV-F Drill: Tool Use and Agents",
+                  "status": "locked",
+                  "order": 3,
+                  "attempts": 0,
+                  "evidence": [],
+                  "evaluation": {
+                    "passedAt": null,
+                    "criteriaMet": [],
+                    "notes": ""
+                  },
+                  "domainScores": {}
+                },
+                "project-04": {
+                  "title": "CCDV-F Drill: Evals and Cost",
+                  "status": "locked",
+                  "order": 4,
+                  "attempts": 0,
+                  "evidence": [],
+                  "evaluation": {
+                    "passedAt": null,
+                    "criteriaMet": [],
+                    "notes": ""
+                  },
+                  "domainScores": {}
+                },
+                "project-05": {
+                  "title": "CCDV-F: Take the Mock Exam",
+                  "status": "locked",
+                  "order": 5,
+                  "attempts": 0,
+                  "evidence": [],
+                  "evaluation": {
+                    "passedAt": null,
+                    "criteriaMet": [],
+                    "notes": ""
+                  },
+                  "domainScores": {}
+                }
+              }
+            },
+            "ccar-f": {
+              "status": "locked",
+              "plannedProjects": 5,
+              "projects": {
+                "project-01": {
+                  "title": "CCAR-F Drill: Choose the Right Architecture",
+                  "status": "locked",
+                  "order": 1,
+                  "attempts": 0,
+                  "evidence": [],
+                  "evaluation": {
+                    "passedAt": null,
+                    "criteriaMet": [],
+                    "notes": ""
+                  },
+                  "domainScores": {}
+                },
+                "project-02": {
+                  "title": "CCAR-F Drill: Data Privacy by Design",
+                  "status": "locked",
+                  "order": 2,
+                  "attempts": 0,
+                  "evidence": [],
+                  "evaluation": {
+                    "passedAt": null,
+                    "criteriaMet": [],
+                    "notes": ""
+                  },
+                  "domainScores": {}
+                },
+                "project-03": {
+                  "title": "CCAR-F Drill: Security Frameworks and Guardrails",
+                  "status": "locked",
+                  "order": 3,
+                  "attempts": 0,
+                  "evidence": [],
+                  "evaluation": {
+                    "passedAt": null,
+                    "criteriaMet": [],
+                    "notes": ""
+                  },
+                  "domainScores": {}
+                },
+                "project-04": {
+                  "title": "CCAR-F Drill: Multi-Model Deployment",
+                  "status": "locked",
+                  "order": 4,
+                  "attempts": 0,
+                  "evidence": [],
+                  "evaluation": {
+                    "passedAt": null,
+                    "criteriaMet": [],
+                    "notes": ""
+                  },
+                  "domainScores": {}
+                },
+                "project-05": {
+                  "title": "CCAR-F: Take the Mock Exam",
+                  "status": "locked",
+                  "order": 5,
+                  "attempts": 0,
+                  "evidence": [],
+                  "evaluation": {
+                    "passedAt": null,
+                    "criteriaMet": [],
+                    "notes": ""
+                  },
+                  "domainScores": {}
+                }
+              }
+            },
+            "ccar-p": {
+              "status": "locked",
+              "plannedProjects": 5,
+              "projects": {
+                "project-01": {
+                  "title": "CCAR-P Drill: Enterprise Architecture at Scale",
+                  "status": "locked",
+                  "order": 1,
+                  "attempts": 0,
+                  "evidence": [],
+                  "evaluation": {
+                    "passedAt": null,
+                    "criteriaMet": [],
+                    "notes": ""
+                  },
+                  "domainScores": {}
+                },
+                "project-02": {
+                  "title": "CCAR-P Drill: Reliability and Observability",
+                  "status": "locked",
+                  "order": 2,
+                  "attempts": 0,
+                  "evidence": [],
+                  "evaluation": {
+                    "passedAt": null,
+                    "criteriaMet": [],
+                    "notes": ""
+                  },
+                  "domainScores": {}
+                },
+                "project-03": {
+                  "title": "CCAR-P Drill: Cost Governance at Scale",
+                  "status": "locked",
+                  "order": 3,
+                  "attempts": 0,
+                  "evidence": [],
+                  "evaluation": {
+                    "passedAt": null,
+                    "criteriaMet": [],
+                    "notes": ""
+                  },
+                  "domainScores": {}
+                },
+                "project-04": {
+                  "title": "CCAR-P Drill: Advanced Deployment and Customization",
+                  "status": "locked",
+                  "order": 4,
+                  "attempts": 0,
+                  "evidence": [],
+                  "evaluation": {
+                    "passedAt": null,
+                    "criteriaMet": [],
+                    "notes": ""
+                  },
+                  "domainScores": {}
+                },
+                "project-05": {
+                  "title": "CCAR-P: Take the Mock Exam (Top Anthropic Cert)",
+                  "status": "locked",
+                  "order": 5,
+                  "attempts": 0,
+                  "evidence": [],
+                  "evaluation": {
+                    "passedAt": null,
+                    "criteriaMet": [],
+                    "notes": ""
+                  },
+                  "domainScores": {}
+                }
+              }
+            }
           }
         }
+      }
+    },
+    "english": {
+      "title": "English",
+      "line": "english",
+      "levels": {
+        "beginner": { "status": "active", "plannedProjects": 8, "projects": {
+          "project-01": { "title": "Greetings and Introductions", "status": "unlocked", "order": 1, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+          "project-02": { "title": "Everyday Polite Phrases", "status": "locked", "order": 2, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+          "project-03": { "title": "Numbers, Time and Dates", "status": "locked", "order": 3, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+          "project-04": { "title": "Talking About Yourself and Your Job", "status": "locked", "order": 4, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+          "project-05": { "title": "Asking and Giving Directions", "status": "locked", "order": 5, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+          "project-06": { "title": "Shopping and Money", "status": "locked", "order": 6, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+          "project-07": { "title": "Basic Phone English", "status": "locked", "order": 7, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+          "project-08": { "title": "Write a Simple Email (Level Boss)", "status": "locked", "order": 8, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} }
+        } },
+        "intermediate": { "status": "locked", "plannedProjects": 8, "projects": {
+          "project-01": { "title": "Professional Emails", "status": "locked", "order": 1, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+          "project-02": { "title": "Meetings — Joining and Speaking Up", "status": "locked", "order": 2, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+          "project-03": { "title": "Phone Calls — Messages and Scheduling", "status": "locked", "order": 3, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+          "project-04": { "title": "Describing Problems and Asking for Help", "status": "locked", "order": 4, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+          "project-05": { "title": "Giving Updates and Status Reports", "status": "locked", "order": 5, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+          "project-06": { "title": "Making and Handling Requests Politely", "status": "locked", "order": 6, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+          "project-07": { "title": "Small Talk and Teamwork", "status": "locked", "order": 7, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+          "project-08": { "title": "Run a Short Meeting (Level Boss)", "status": "locked", "order": 8, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} }
+        } },
+        "advanced": { "status": "locked", "plannedProjects": 8, "projects": {
+          "project-01": { "title": "Presentations — Explaining Ideas Clearly", "status": "locked", "order": 1, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+          "project-02": { "title": "Persuasion and Negotiation", "status": "locked", "order": 2, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+          "project-03": { "title": "Handling Complaints and Difficult Conversations", "status": "locked", "order": 3, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+          "project-04": { "title": "Writing Reports and Documentation", "status": "locked", "order": 4, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+          "project-05": { "title": "Job Interviews — Skills and Experience", "status": "locked", "order": 5, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+          "project-06": { "title": "Networking and Professional Etiquette", "status": "locked", "order": 6, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+          "project-07": { "title": "Advanced Email and Written Communication", "status": "locked", "order": 7, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} },
+          "project-08": { "title": "Job Interview + Follow-Up Email (Level Boss)", "status": "locked", "order": 8, "attempts": 0, "evidence": [], "evaluation": { "passedAt": null, "criteriaMet": [], "notes": "" }, "domainScores": {} }
+        } }
       }
     }
   },
@@ -249,7 +1730,12 @@
     "unlocksAfter": "All Linux, Docker, and Kubernetes levels (through CKS) complete"
   },
   "weakAreas": [],
-  "achievements": ["🎉 First steps — completed your very first project!"],
-  "skillsUnlocked": ["terminal navigation (pwd, ls, cd)", "reading files (cat, head, tail)"],
+  "achievements": [
+    "🎉 First steps — completed your very first project!"
+  ],
+  "skillsUnlocked": [
+    "terminal navigation (pwd, ls, cd)",
+    "reading files (cat, head, tail)"
+  ],
   "overallPercent": 1
 }

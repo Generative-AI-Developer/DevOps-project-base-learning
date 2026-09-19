@@ -113,6 +113,14 @@ const overall = totalPlanned ? Math.round((totalDone / totalPlanned) * 100) : 0;
 
 const devopsKeys = Object.keys(progress.tracks).filter((k) => progress.tracks[k].line === "devops");
 const anthropicKeys = Object.keys(progress.tracks).filter((k) => progress.tracks[k].line === "anthropic");
+const englishKeys = Object.keys(progress.tracks).filter((k) => progress.tracks[k].line === "english");
+const englishSection = englishKeys.length ? `
+    <div class="anthropic">
+      <p class="line-title">Language path · English (everyday + workplace)</p>
+      <div class="cards">
+        ${englishKeys.map((k) => trackCard(k, progress.tracks[k])).join("")}
+      </div>
+    </div>` : "";
 
 const weak = (progress.weakAreas || []).length
   ? `<ul>${progress.weakAreas.map((w) => `<li>⚠️ <b>${escapeHtml(w.domain)}</b> (score ${w.score}) — fix before ${escapeHtml(w.mustRemediateBefore || "next stage")}</li>`).join("")}</ul>`
@@ -206,6 +214,7 @@ const html = `<!doctype html>
         ${anthropicKeys.map((k) => trackCard(k, progress.tracks[k])).join("")}
       </div>
     </div>
+    ${englishSection}
   </div>
 
   <div class="panel"><b>⚠️ Weak areas to fix</b>${weak}</div>

@@ -6,6 +6,9 @@ Your big goal: **become job-ready** and **score strongly** on:
 - Kubernetes certs: **CKAD, CKA, CKS**
 - Anthropic certs: **CCAO-F, CCDV-F, CCAR-F, CCAR-P**
 
+Plus a **language path**:
+- **English** (Beginner → Intermediate → Advanced) — everyday and workplace English, with a vocabulary list in **English and Urdu (اردو)** for every lesson.
+
 > All text here is in **simple English** on purpose. Short sentences. Easy words.
 
 ---

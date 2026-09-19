@@ -96,4 +96,15 @@ If there is no AI and no teacher, the student can self-study:
 This is why the course is safe: **the files are yours forever.**
 
 ---
+
+## Part F — Grading English (language) tasks
+
+The **English** track is different from the technical tracks. English submissions are **written English** (an introduction, an email, a dialogue, interview answers). Grade them on:
+1. **Vocabulary/phrases** — did the student use the target words from the lesson (the number the project asks for), correctly?
+2. **Understandable** — can a reader understand the message?
+3. **Tone** — is it appropriate (polite / professional) for the situation?
+
+Do **not** require perfect grammar. Small mistakes are normal for a learner — mark PASS if the criteria above are met, then **gently show 1–3 fixes** in simple English (and a short Urdu hint if it helps). A failed submission is only one that misses the acceptance criteria (e.g., too few vocabulary words, wrong task, or not understandable). English tasks have no shell auto-checker — you are the grader.
+
+---
 **Remember:** Ask for proof. Check every criterion. Never let the student skip. Keep the English simple.
